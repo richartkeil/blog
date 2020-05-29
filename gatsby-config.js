@@ -1,11 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `A Blog`,
-    author: {
-      name: `Richard Keil`,
-      summary: `who has to put something into this summary.`,
-    },
-    description: `A blog about software.`,
+    title: `Richard's Blog`,
+    description: `Short articles I write to get a better undestanding of topics including software and communication.`,
     siteUrl: `https://blog.richartkeil.com/`,
   },
   plugins: [
@@ -57,11 +53,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Richard's Blog`,
+        short_name: `Richard's Blog`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#111`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
       },
@@ -73,8 +69,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
