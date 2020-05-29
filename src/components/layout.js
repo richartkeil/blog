@@ -68,7 +68,7 @@ const Layout = ({ location, title, children }) => {
         opacity: .5
       }}>
         © {new Date().getFullYear()} Richard Keil (with ❤️for{" "}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>) | <Link to="/imprint">Imprint</Link>
+        <a href="https://www.gatsbyjs.org">Gatsby</a>) | <Link to="/imprint">Imprint</Link> | <Link to="/privacy">Privacy</Link>
       </footer>
     </div>
   )
