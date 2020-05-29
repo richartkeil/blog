@@ -58,7 +58,11 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer style={{
+        textAlign: "center",
+        margin: rhythm(2),
+        opacity: .5
+      }}>
         © {new Date().getFullYear()} Richard Keil (with ❤️for{" "}
         <a href="https://www.gatsbyjs.org">Gatsby</a>)
       </footer>
