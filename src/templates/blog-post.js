@@ -48,7 +48,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </footer>
       </article>
 
-      <nav>
+      <nav style={{ marginTop: rhythm(1)}}>
         <ul
           style={{
             display: `flex`,
