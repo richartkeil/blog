@@ -60,7 +60,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer style={{
         textAlign: "center",
-        margin: rhythm(2),
+        marginTop: rhythm(2),
         opacity: .5
       }}>
         © {new Date().getFullYear()} Richard Keil (with ❤️for{" "}
