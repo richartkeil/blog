@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Richard's Blog`,
-    description: `Short articles I write to get a better undestanding of topics including software and communication.`,
+    description: `Short articles I write to get a better understanding of topics including software and communication.`,
     siteUrl: `https://blog.richartkeil.com/`,
   },
   plugins: [
