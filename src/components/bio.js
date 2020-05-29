@@ -37,9 +37,13 @@ const Bio = () => {
         }}
       />
       <div>
-        I'm Richard and this is my blog. I try to craft articles like little
-        tasty pieces of knowledge — easy to understand so I can get better at
-        breaking down things. (<a href="https://github.com/richartkeil">Github</a>, <a href="https://www.instagram.com/richartkeil/">Instagram</a> and <a href="https://twitter.com/richartkeil">Twitter</a>)
+        Trying to craft articles like little tasty pieces of knowledge — written
+        to understand things and become better at explaining them.
+        <div>
+          <a href="https://github.com/richartkeil">Github</a> •{" "}
+          <a href="https://www.instagram.com/richartkeil/">Instagram</a> •{" "}
+          <a href="https://twitter.com/richartkeil">Twitter</a>
+        </div>
       </div>
     </div>
   )
