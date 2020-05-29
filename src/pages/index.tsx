@@ -41,10 +41,16 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
+          <article key={node.fields.slug} style={{
+            padding: rhythm(1),
+            marginTop: rhythm(1),
+            borderRadius: "2px",
+            border: "1px solid #ddd"
+          }}>
             <header>
               <h3
                 style={{
+                  marginTop: 0,
                   marginBottom: rhythm(1 / 4),
                 }}
               >
@@ -56,6 +62,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             </header>
             <section>
               <p
+                style={{ marginBottom: 0 }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
