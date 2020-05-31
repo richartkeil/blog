@@ -35,6 +35,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             {post.frontmatter.date}
+            {post.frontmatter.date_updated && (
+              <> • Last updated {post.frontmatter.date_updated}</>
+            )}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -48,7 +51,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </footer>
       </article>
 
-      <nav style={{ marginTop: rhythm(1)}}>
+      <nav style={{ marginTop: rhythm(1) }}>
         <ul
           style={{
             display: `flex`,
@@ -94,6 +97,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        date_updated(formatString: "MMMM DD, YYYY")
         description
       }
     }
