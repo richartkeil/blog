@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post.frontmatter.date} • {post.fields.readingTime.text}
             {post.frontmatter.date_updated && (
               <> • Last updated {post.frontmatter.date_updated}</>
             )}
@@ -99,6 +99,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         date_updated(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }
