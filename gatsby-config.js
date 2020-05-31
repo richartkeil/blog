@@ -35,6 +35,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          `gatsby-remark-embed-gist`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -49,7 +50,7 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
         anonymize: true,
         // Do not put in head so Osano is first.
-        head: false
+        head: false,
       },
     },
     `gatsby-plugin-feed`,

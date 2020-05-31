@@ -6,6 +6,11 @@ const FontToCodeRatio = .8
 
 TypographyTheme.baseFontSize = `${BaseFontSize}px`
 TypographyTheme.overrideThemeStyles = ({ scale, adjustFontSizeTo }, options) => ({
+  td: {
+    // This is to remove the default border so it does not interfere with Github
+    // Gist content.
+    border: `none`
+  },
   code: {
     fontSize: `${BaseFontSize * FontToCodeRatio}px !important`,
     lineHeight: `${options.baseLineHeight * FontToCodeRatio} !important`
