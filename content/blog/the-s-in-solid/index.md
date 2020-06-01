@@ -64,7 +64,11 @@ onAccountCreated(event: Event) {
   eventRepository.persist(event)
   notifications.broadcast(event)
 }
+```
+
 The repository can take full responsibility on how to persist events:
+
+```ts
 class EventRepository {
   persist(event: Event) {
     database.table("events").create({
@@ -113,7 +117,7 @@ Even if this creates more lines of code, the overall quality of it is improved:
 
 By now the benefits and necessity of structuring code this way should be clear.
 
-However, as with most things, one should not just apply the methods promoted by the Single Responsibility Principle blindfolded. Just splitting all your code into own classes until each has only a one-line-method will lead to over-engineered garbage code which is inefficient to work with.
+However, as with most things, one should not just apply the methods promoted by the Single Responsibility Principle blindfolded. Just splitting all your code into own classes until each has only a one-line-method will lead to over-engineered code which is inefficient to work with.
 
 One should understand that the principle is about balancing division with aggregation — based on the reason for certain parts of code to change.
 
