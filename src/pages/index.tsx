@@ -1,11 +1,10 @@
-// Gatsby supports TypeScript natively!
 import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { PageProps, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Post from "../components/post"
 
 type Data = {
   site: {
@@ -41,39 +40,16 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug} style={{
-            padding: rhythm(1),
-            marginTop: rhythm(1),
-            borderRadius: "2px",
-            border: "1px solid #ddd"
-          }}>
-            <header>
-              <h3
-                style={{
-                  marginTop: 0,
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date} ∙ {node.fields.readingTime.text}</small>
-            </header>
-            <section>
-              <p
-                style={{ marginBottom: 0 }}
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      {posts.map(({ node }) => (
+        <Post
+          title={node.frontmatter.title}
+          slug={node.fields.slug}
+          excerpt={node.frontmatter.description || node.excerpt}
+          readingTime={node.fields.readingTime.text}
+          date={node.frontmatter.date}
+          key={node.fields.slug}
+        />
+      ))}
     </Layout>
   )
 }
