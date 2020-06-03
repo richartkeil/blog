@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/post"
+import UpcomingPost from "../components/upcomingPost"
 
 type Data = {
   site: {
@@ -40,6 +41,10 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <UpcomingPost
+        title="The L in SOLID Software Architecture — Liskov Substitution Principle"
+        date="June 4, 2020"
+      />
       {posts.map(({ node }) => (
         <Post
           title={node.frontmatter.title}
