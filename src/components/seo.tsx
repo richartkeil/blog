@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -7,14 +6,14 @@ interface Props {
   description: string
   lang: string
   meta: {
-    name: string,
+    name: string
     content: string
-  }[],
-  title: string,
-  twitterCard?: `summary` | `summary_large_image` | `app` | `player`
+  }[]
+  title: string
+  image?: string
 }
 
-const SEO = (props: Props) => {
+const SEO: React.FunctionComponent<Props> = props => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -54,9 +53,17 @@ const SEO = (props: Props) => {
           property: `og:type`,
           content: `website`,
         },
+        ...(props.image
+          ? [
+              {
+                name: `og:image`,
+                content: props.image,
+              },
+            ]
+          : []),
         {
           name: `twitter:card`,
-          content: props.twitterCard || `summary`,
+          content: props.image ? `summary_large_image` : `summary`,
         },
         {
           name: `twitter:creator`,
@@ -70,6 +77,14 @@ const SEO = (props: Props) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        ...(props.image
+          ? [
+              {
+                name: `twitter:image`,
+                content: props.image,
+              },
+            ]
+          : []),
       ].concat(props.meta)}
     />
   )
@@ -79,13 +94,6 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

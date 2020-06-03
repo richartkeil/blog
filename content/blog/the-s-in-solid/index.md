@@ -2,6 +2,7 @@
 title: The S in SOLID Software Architecture - Single Responsibility Principle
 date: "2020-05-18T18:00:00Z"
 description: "S stands for „Single Responsibility“, which means to do only one thing, but do it well."
+image: "./eagle.jpg"
 ---
 
 In software development the concept of building complex structures out of basic blocks is omnipresent, be it in the form of classes, components or modules.

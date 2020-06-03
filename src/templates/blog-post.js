@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        twitterCard="summary_large_image"
+        image={post.frontmatter.image?.childImageSharp.fluid.src}
       />
       <article>
         <header>
@@ -100,6 +100,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         date_updated(formatString: "MMMM DD, YYYY")
         description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         readingTime {
