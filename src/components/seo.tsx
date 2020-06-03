@@ -10,7 +10,8 @@ interface Props {
     name: string,
     content: string
   }[],
-  title: string
+  title: string,
+  twitterCard?: `summary` | `summary_large_image` | `app` | `player`
 }
 
 const SEO = (props: Props) => {
@@ -55,7 +56,7 @@ const SEO = (props: Props) => {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: props.twitterCard || `summary`,
         },
         {
           name: `twitter:creator`,
