@@ -34,7 +34,7 @@ class NotificationHandler {
   }
 }
 
-onAccountCreated(event: Event, user: User) {
+function onAccountCreated(event: Event, user: User) {
   notifications.broadcast(event, user, "email")
 }
 ```
@@ -80,7 +80,7 @@ class NotificationHandler {
   }
 }
 
-onAccountCreated(event: Event, user: User) {
+function onAccountCreated(event: Event, user: User) {
   notifications.broadcast(event, user, new EmailBroadcaster)
 }
 ```

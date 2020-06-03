@@ -13,7 +13,7 @@ According to the SOLID principles, each of these basic blocks should only have o
 For example, let’s say one wants to react to an event that is thrown within an application. The event should be persisted to the database and a notification email should be sent to users. This could look something like the following (written in Typescript but easy to read - it’s about the principles, not the language):
 
 ```ts
-onAccountCreated(event: Event) {
+function onAccountCreated(event: Event) {
   // Persist event in database.
   database.table("events").create({
     name: event.getName(),
@@ -60,7 +60,7 @@ In the example, there are multiple reasons for the code to change, all with diff
 So what would be a more suitable solution? Let me suggest this:
 
 ```ts
-onAccountCreated(event: Event) {
+function onAccountCreated(event: Event) {
   eventRepository.persist(event)
   notifications.broadcast(event)
 }
