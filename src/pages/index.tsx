@@ -42,8 +42,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="All posts" />
       <Bio />
       <UpcomingPost
-        title="The L in SOLID Software Architecture — Liskov Substitution Principle"
-        date="June 4, 2020"
+        title="The I in SOLID Software Architecture — Interface Segregation Principle"
+        date="June 11, 2020"
       />
       {posts.map(({ node }) => (
         <Post
