@@ -27,6 +27,15 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              linkImagesToOriginal: false,
+              showCaptions: true,
+              markdownCaptions: true,
+              wrapperStyle: `
+                text-align: center;
+                color: #0006;
+                font-size: .8em;
+                font-style: italic;
+              `,
             },
           },
           {
@@ -77,6 +86,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
   ],
 }
