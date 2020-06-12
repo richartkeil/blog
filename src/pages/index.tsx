@@ -42,8 +42,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="All posts" />
       <Bio />
       <UpcomingPost
-        title="The I in SOLID Software Architecture — Interface Segregation Principle"
-        date="June 11, 2020"
+        title="The D in SOLID Software Architecture — Dependency Inversion Principle"
+        date="July 9th, 2020"
       />
       {posts.map(({ node }) => (
         <Post
