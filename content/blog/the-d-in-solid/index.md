@@ -38,7 +38,7 @@ class NotificationHandler {
 }
 
 function onAccountCreated(event: Event, user: User) {
-  const notifications = new NotificationHandler();
+  const notifications = new NotificationHandler()
   notifications.broadcast(event, user)
 }
 ```
