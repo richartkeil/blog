@@ -102,4 +102,4 @@ Detecting violations of the Interface Segregation Principle is usually easy. One
 
 ---
 
-The principle is pretty straight forward and thinking of it while implementing new features will certainly enhance the maintainability of your code. It also plays nicely into the hands of the [Solid Responsibility Principle](/the-s-in-solid).
+The principle is pretty straight forward and thinking of it while implementing new features will certainly enhance the maintainability of your code. It also plays nicely into the hands of the [Single Responsibility Principle](/the-s-in-solid).
