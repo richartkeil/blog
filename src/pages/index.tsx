@@ -42,8 +42,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="All posts" />
       <Bio />
       <UpcomingPost
-        title="The D in SOLID Software Architecture — Dependency Inversion Principle"
-        date="July 9th, 2020"
+        title="A summary about the subtle art of Mark Manson"
+        date="July 23rd, 2020"
       />
       {posts.map(({ node }) => (
         <Post
