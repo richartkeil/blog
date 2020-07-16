@@ -12,6 +12,7 @@ const SignupForm = () => {
         padding: rhythm(1),
         borderRadius: "2px",
         border: "1px solid #ddd",
+        transform: "rotate(-.5deg)"
       }}
     >
       <h2 style={{ margin: 0 }}>Get notified about new posts</h2>
@@ -36,6 +37,8 @@ const SignupForm = () => {
             width: "100%",
             marginRight: "8px",
             padding: "5px 10px",
+            border: "1px solid #777",
+            borderRadius: "2px"
           }}
         />
         <Button type="submit">Subscribe</Button>
