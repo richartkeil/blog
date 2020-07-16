@@ -86,6 +86,4 @@ This is where „Inversion of Control Containers“ (short IoC Containers) come 
 
 Most modern frameworks come with this ability to „autowire“ out of the box. In our example, it would be likely that the `onAccountCreated` function is part of a module that can be hooked up through our own or a framework IoC container. Then the `NotificationHandler` would be instantiated through the container and directly provisioned with a Broadcaster that we could globally configure.
 
----
-
 Dependency Inversion is a powerful concept that allows building systems that are more modular and can adapt faster to changing requirements. The principle is the last one of the five SOLID principles.

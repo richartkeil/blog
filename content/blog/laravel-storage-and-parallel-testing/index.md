@@ -40,6 +40,4 @@ This trait can now be used in the base `Tests\TestCase.php` or in special Test C
 
 The method performs similar actions as the original one, except that it assigns a unique time stamped path to each directory and then removes this folder and its content when the test is about to be torn down. Easy as that.
 
----
-
 I admit the discussed scenario is a special case that not many will encounter. However if you found this article helpful, let me know! If not, keep it to you. Or tell me so I can work on it.

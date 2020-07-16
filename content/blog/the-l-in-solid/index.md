@@ -69,6 +69,4 @@ To make it easier to spot violations I propose to interpret „inheritance” as
 
 This way we always keep in mind that a subclass builds on top of the behaviour of a base class and does not try to change the initial behaviour.
 
----
-
 This article was especially interesting to write because it required some time to come up with a fitting example along the lines of the Event-Notification example of the [Single Responsibility](/the-s-in-solid) and [Open Closed Principle](/the-o-in-solid) post.

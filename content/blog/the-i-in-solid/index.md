@@ -100,6 +100,4 @@ Detecting violations of the Interface Segregation Principle is usually easy. One
 - classes implement one-line methods that just return null or throw an exception
 - the architecture utilizes many layers of inheritance — in this case violations of the principle are often inevitable because one [bases subtyping on modifying behaviour instead of only extending it](/the-l-in-solid) (Barbara Liskov is watching you 👀)
 
----
-
 The principle is pretty straight forward and thinking of it while implementing new features will certainly enhance the maintainability of your code. It also plays nicely into the hands of the [Single Responsibility Principle](/the-s-in-solid).

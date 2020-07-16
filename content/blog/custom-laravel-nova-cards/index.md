@@ -70,8 +70,6 @@ Clean up. Nova will have added custom scripts to `package.json`, so remove them.
 
 Delete the `/nova-components` directory.
 
----
-
 And that’s it. Now you can run `npm run watch` and continue developing your app. Custom Nova components will be compiled and you can easily edit and use them like filters, actions or metric cards.
 
 Let me know what you think about Laravel Nova and whether you see a different solution for the described problem!

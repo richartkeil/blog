@@ -39,6 +39,4 @@ So if the goal is to find the minimum of the cost function, can't we just calcul
 
 The multiple repetition of this process is called „machine learning“ — because knowledge is accumulated through the collection of experiences, for example the amount of the resulting „cost“. So if you train such a system long enough with meaningful data and provide it with the appropriate resources, eventually it will have the ability to evaluate data with similar certainty as the human brain. And to identify apples in pictures.
 
----
-
 I got most of the information in this summary from the sources of the first week of the [openHPI course](https://open.hpi.de/courses/neuralnets2020), so check it out if you want to know more.

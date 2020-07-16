@@ -43,11 +43,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr style={{ marginBottom: rhythm(1), marginTop: rhythm(1) }} />
+        <p>
+          Got thoughts on this?{" "}
+          <a
+            href={`mailto:hello@richartkeil.com?subject=Response to "${post.frontmatter.title}"`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Write me a response
+          </a>!
+        </p>
+        <hr style={{ marginBottom: rhythm(1), marginTop: rhythm(1) }} />
         <footer>
           <Bio />
           <SignupForm />
