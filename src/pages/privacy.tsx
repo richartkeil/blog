@@ -37,7 +37,7 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
         While using our Site, we may ask you to provide us with certain
         personally identifiable information that can be used to contact or
         identify you. Personally identifiable information may include, but is
-        not limited to your name ("Personal Information").
+        not limited to your name and email address ("Personal Information").
       </p>
       <h2>Google Analytics (with anonymization function)</h2>
       <p>
@@ -120,7 +120,11 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
       </p>
       <h2>Contact Us</h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us.
+        If you have any questions about this Privacy Policy, please{" "}
+        <a href="mailto:hello@richartkeil.com" target="_blank">
+          contact us
+        </a>
+        .
       </p>
     </Layout>
   )

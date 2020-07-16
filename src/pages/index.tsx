@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/post"
 import UpcomingPost from "../components/upcomingPost"
+import SignupForm from "../components/signupForm"
+import { rhythm } from "../utils/typography"
 
 type Data = {
   site: {
@@ -55,6 +57,12 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           key={node.fields.slug}
         />
       ))}
+      <p
+        style={{ textAlign: "center", opacity: 0.5, marginTop: rhythm() }}
+      >
+        Looks like you've reached the end :)
+      </p>
+      <SignupForm />
     </Layout>
   )
 }
