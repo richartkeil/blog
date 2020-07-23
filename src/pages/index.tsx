@@ -44,8 +44,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="All posts" />
       <Bio />
       <UpcomingPost
-        title="A summary about the subtle art of Mark Manson"
-        date="July 23rd, 2020"
+        title="How to build an event log system with Google Firebase Firestore"
+        date="July 30th, 2020"
       />
       {posts.map(({ node }) => (
         <Post
