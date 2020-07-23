@@ -6,6 +6,8 @@ description: I recently read the book „The Subtle Art of Not Giving a F*ck“ 
 
 I recently read the book „The Subtle Art of Not Giving a F*ck“ by Mark Manson — these are my key learnings and thoughts from it.
 
+![](filter.png)
+
 ## Self-improvement culture: Better, Smarter, Happier
 
 We live in a world that is strongly influenced by a high level of connectedness — to not turn mad, we need to filter out certain things. This filtering is often not done by ourselves, but rather (social) media, which is in turn motivated to supply us with the content most likely to satisfy our cravings. It creates a notion of needing to „be better, be happier, be smarter“ and a focus on what we might lack instead of what we already have.
