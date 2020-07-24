@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 type Data = {
   site: {
     siteMetadata: {
-      title: string,
+      title: string
       siteUrl: string
     }
   }
@@ -18,7 +18,11 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={site.title}>
-      <SEO title="Imprint" />
+      <SEO
+        title="Imprint"
+        description="The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality."
+        noIndex
+      />
       <h1>Legal Disclosure</h1>
       <p>Information in accordance with Section 5 TMG</p>
       <p>

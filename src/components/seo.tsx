@@ -11,6 +11,7 @@ interface Props {
   }[]
   title: string
   image?: string
+  noIndex?: boolean
 }
 
 const SEO: React.FunctionComponent<Props> = props => {
@@ -82,6 +83,14 @@ const SEO: React.FunctionComponent<Props> = props => {
               {
                 name: `twitter:image`,
                 content: props.image,
+              },
+            ]
+          : []),
+        ...(props.noIndex
+          ? [
+              {
+                name: `robots`,
+                content: `noindex, follow`,
               },
             ]
           : []),

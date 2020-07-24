@@ -18,7 +18,11 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={site.title}>
-      <SEO title="Privacy" />
+      <SEO
+        title="Privacy"
+        description="This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site."
+        noIndex
+      />
       <h1>Privacy Policy</h1>
       <p>Last updated: 2020-05-29</p>
       <p>
