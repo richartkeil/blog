@@ -87,5 +87,30 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-amp`,
+      options: {
+        // analytics: {
+        //   type: 'gtag',
+        //   dataCredentials: 'include',
+        //   config: {
+        //     vars: {
+        //       gtag_id: <GA_TRACKING_ID>,
+        //       config: {
+        //         <GA_TRACKING_ID>: {
+        //           page_location: '{{pathname}}'
+        //         },
+        //       },
+        //     },
+        //   },
+        // },
+        canonicalBaseUrl: 'https://blog.richartkeil.com/',
+        components: ['amp-form'],
+        excludedPaths: ['/404*', '/'],
+        pathIdentifier: '/amp/',
+        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        // useAmpClientIdApi: true,
+      },
+    },
   ],
 }
