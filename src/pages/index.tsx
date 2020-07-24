@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Articles about Software and Humans" />
       <Bio />
       <UpcomingPost
         title="How to build an event log system with Google Firebase Firestore"
