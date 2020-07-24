@@ -55,7 +55,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
     createPage({
-      path: `${post.node.fields.slug}/amp`,
+      path: `${post.node.fields.slug}/amp/`,
       component: path.resolve(`./src/templates/blog-post.amp.js`),
       context: {
         slug: post.node.fields.slug,
