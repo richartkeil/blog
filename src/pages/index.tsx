@@ -45,7 +45,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <Bio />
       <UpcomingPost
         title="How to build an event log system with Google Firebase Firestore"
-        date="July 30th, 2020"
+        date="August 6th, 2020"
       />
       {posts.map(({ node }) => (
         <Post
