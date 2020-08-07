@@ -11,6 +11,9 @@ TypographyTheme.overrideThemeStyles = ({ scale, adjustFontSizeTo }, options) => 
     // Gist content.
     border: `none`
   },
+  blockquote: {
+    fontSize: `inherit`
+  },
   code: {
     fontSize: `${BaseFontSize * FontToCodeRatio}px !important`,
     lineHeight: `${options.baseLineHeight * FontToCodeRatio} !important`
