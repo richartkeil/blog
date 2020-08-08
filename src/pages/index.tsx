@@ -44,8 +44,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="Articles about Software and Humans" />
       <Bio />
       <UpcomingPost
-        title="How to build an event log system with Google Firebase Firestore"
-        date="August 6th, 2020"
+        title="About the mind and cognitive dissonance"
+        date="August 13th, 2020"
       />
       {posts.map(({ node }) => (
         <Post
