@@ -1,7 +1,7 @@
 ---
 title: How to build an event logging system with Firebase and Google Cloud Firestore
 date: 2020-08-07T18:00:00Z
-description: Asynchronous systems need to be able to notify their users about changes — which can be persisted and distributed as events.
+description: Asynchronous systems need to be able to notify their users about changes — which can be persisted as events and distributed through webhooks.
 ---
 
 Firebase and Google Cloud Platform offer an excellent way to build apps and systems that can rapidly scale while providing a fantastic developer experience. At [EstateSync](https://estatesync.io), we use GCP services as the backend for our API to allow the fast distribution of real estate data to multiple vendors. Given the requirement to be able to scale to large amounts of data, we built our architecture on the premise of asynchronicity.
