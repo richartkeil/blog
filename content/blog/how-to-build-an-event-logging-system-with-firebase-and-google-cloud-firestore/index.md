@@ -29,7 +29,7 @@ We can come up with a solution by looking at the commonalities of the two types 
 ### Step 1: Plan how to structure the data
 
 Create a collection `events` within Firestore. Each of the future documents should have the following fields:
-- `name`: a string used for identification purposes, e.g. „publication.succeeded“
+- `name`: a string used for identification purposes, e.g. „user.processed“
 - `payload`: a map used to store arbitrary data of the event
 - `isCritical`: a boolean to indicate that this is an event that is not supposed to happen (also called „Error“)
 - `createdAt`: a timestamp used for sorting and display
