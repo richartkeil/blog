@@ -2,6 +2,7 @@
 title: About responsibility, acceptance and commitment — How a subtle art can lead to a happier life
 date: 2020-07-22T18:00:00Z
 description: I recently read the book „The Subtle Art of Not Giving a F*ck“ by Mark Manson — these are my key learnings and thoughts from it.
+image: ./filter.png
 ---
 
 I recently read the book „The Subtle Art of Not Giving a F*ck“ by Mark Manson — these are my key learnings and thoughts from it.
