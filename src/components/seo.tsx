@@ -8,6 +8,7 @@ interface Props {
   meta: {
     name: string
     content: string
+    siteUrl: string
   }[]
   title: string
   image?: string
@@ -22,6 +23,7 @@ const SEO: React.FunctionComponent<Props> = props => {
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
@@ -58,7 +60,7 @@ const SEO: React.FunctionComponent<Props> = props => {
           ? [
               {
                 name: `og:image`,
-                content: props.image,
+                content: site.siteMetadata.siteUrl + props.image,
               },
             ]
           : []),
@@ -82,7 +84,7 @@ const SEO: React.FunctionComponent<Props> = props => {
           ? [
               {
                 name: `twitter:image`,
-                content: props.image,
+                content: site.siteMetadata.siteUrl + props.image,
               },
             ]
           : []),
