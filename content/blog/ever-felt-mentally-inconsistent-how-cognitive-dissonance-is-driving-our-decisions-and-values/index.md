@@ -2,6 +2,7 @@
 title: Ever felt „mentally inconsistent“? How Cognitive Dissonance is driving our decisions and values
 date: 2020-08-14T18:00:00Z
 description: Humans seek a state of psychological consistency in which our mental attitudes and actions match up. How do we act when this is not the case?
+image: ./examples.png
 writeTime: 6h 0min
 ---
 
@@ -10,6 +11,8 @@ How come so many people who smoke believe that life ends anyhow at some point, s
 How comes so many entrepreneurs with failed ventures argue that it was worth all the effort for the learnings?
 
 How comes so many divorced couples can only see the bad attitudes and habits in each other?
+
+![The couple, the entrepreneur and the smoker.](examples.png)
 
 Cognitive Dissonance can provide an answer to these questions. First described in 1957 by Leon Festinger[^1], **Cognitive Dissonance is the uncomfortable feeling** one experiences **when two ideas one holds clash with each other** — often a certain behaviour with a contrary attitude. This feeling can vary in intensity and can become **as strong as being hungry**[^2].
 
