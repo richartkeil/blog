@@ -8,9 +8,9 @@ writeTime: 6h 0min
 
 How come so many people who smoke believe that life ends anyhow at some point, so why not enjoy it in the meantime?
 
-How comes so many entrepreneurs with failed ventures argue that it was worth all the effort for the learnings?
+How come so many entrepreneurs with failed ventures argue that it was worth all the effort for the learnings?
 
-How comes so many divorced couples can only see the bad attitudes and habits in each other?
+How come so many divorced couples can only see the bad attitudes and habits in each other?
 
 ![The couple, the entrepreneur and the smoker.](examples.png)
 
