@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import SignupForm from "../components/signupForm"
+import Post from "../components/post"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -52,7 +53,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             rel="noreferrer"
           >
             Write me a response
-          </a>!
+          </a>
+          !
         </p>
         <hr style={{ marginBottom: rhythm(1), marginTop: rhythm(1) }} />
         <footer>
@@ -61,32 +63,31 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </footer>
       </article>
 
-      <nav style={{ marginTop: rhythm(1) }}>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      {previous && (
+        <>
+          <h3>Previous Post:</h3>
+          <Post
+            title={previous.frontmatter.title}
+            slug={previous.fields.slug}
+            excerpt={previous.frontmatter.description || previous.excerpt}
+            readingTime={previous.fields.readingTime.text}
+            date={previous.frontmatter.date}
+          />
+        </>
+      )}
+
+      {next && (
+        <>
+          <h3>Next Post:</h3>
+          <Post
+            title={next.frontmatter.title}
+            slug={next.fields.slug}
+            excerpt={next.frontmatter.description || next.excerpt}
+            readingTime={next.fields.readingTime.text}
+            date={next.frontmatter.date}
+          />
+        </>
+      )}
     </Layout>
   )
 }
