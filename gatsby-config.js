@@ -85,7 +85,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/imprint`, `/privacy`],
+      },
+    },
     `gatsby-plugin-styled-components`,
   ],
 }
