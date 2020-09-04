@@ -45,7 +45,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <Bio />
       <UpcomingPost
         title="How to build a team based user management system in Firebase"
-        date="September 3rd, 2020"
+        date="September 13th, 2020"
       />
       {posts.map(({ node }) => (
         <Post
