@@ -43,10 +43,10 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Articles about Software and Humans" />
       <Bio />
-      <UpcomingPost
+      {/* <UpcomingPost
         title="How to build a team based user management system in Firebase"
         date="September 13th, 2020"
-      />
+      /> */}
       {posts.map(({ node }) => (
         <Post
           title={node.frontmatter.title}
