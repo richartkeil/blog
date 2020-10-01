@@ -11,9 +11,9 @@ Inheritance is a powerful feature in software architecture, especially given the
 
 ![Inheritance is kind of like a Russian doll (Photo by Iza Gawrych)](./russian-doll.jpg)
 
-This leads to the question of when inheritance should actually be used. Why not use composition instead? How do you know if you should implement a new feature by extending something that already exists and just modify its behaviour or by choosing a completely different pattern?
+This leads to the question of when inheritance should actually be used. How do you know if you should implement a new feature by extending something that already exists and just modify its behaviour or by choosing a completely different pattern?
 
-Barbara Liskov answered this question in [a 1987 keynote](https://dl.acm.org/doi/10.1145/62139.62141) and later formalized it in [another paper in 1994](https://dl.acm.org/doi/10.1145/197320.197383):
+Barbara Liskov answered this question in [a 1987 keynote](https://dl.acm.org/doi/10.1145/62139.62141) and later formalized it in [another paper in 1994](https://dl.acm.org/doi/10.1145/197320.197383) together with Jeannette Wing:
 
 > *Subtype Requirement*: Let **ϕ(x)** be a property provable about objects **x** of type **T**. Then **ϕ(y)** should be true for objects **y** of type **S** where **S** is a subtype of **T**.
 
