@@ -3,6 +3,7 @@ title: The D in SOLID Software Architecture — Dependency Inversion Principle
 date: 2020-07-15T18:00:00Z
 description: D stands for Dependency Inversion and promotes depending on abstractions rather than concrete implementations.
 image: ./chains.jpg
+category: tech
 ---
 
 „D“ stands for Dependency Inversion and promotes depending on abstractions rather than concrete implementations.

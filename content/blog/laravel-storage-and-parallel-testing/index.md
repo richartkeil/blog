@@ -4,6 +4,7 @@ date: "2018-11-19T18:00:00Z"
 date_updated: "2020-05-31T16:00:00Z"
 description: "Laravel provides neat testing helpers for working with the filesystem — however if you run your tests in parallel, issues are inevitable."
 image: "./storage.jpg"
+category: tech
 ---
 
 Laravel provides neat testing helpers for working with the filesystem — however if you run your tests in parallel, issues are inevitable.

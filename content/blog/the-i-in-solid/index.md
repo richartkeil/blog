@@ -3,6 +3,7 @@ title: The I in SOLID Software Architecture — Interface Segregation Principle
 date: 2020-06-12T18:00:00Z
 description: I stands for Interface Segregation Principle and encourages only the implementation of behaviour that is actually required.
 image: ./tools.jpg
+category: tech
 ---
 
 „I“ stands for Interface Segregation Principle and encourages only the implementation of behaviour that is actually required.

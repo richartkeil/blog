@@ -4,6 +4,7 @@ date: 2020-08-14T18:00:00Z
 description: Humans seek a state of psychological consistency in which our mental attitudes and actions match up. How do we act when this is not the case?
 image: ./examples.png
 writeTime: 6h 0min
+category: people
 ---
 
 How come so many people who smoke believe that life ends anyhow at some point, so why not enjoy it in the meantime?

@@ -17,7 +17,7 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
   const site = data.site.siteMetadata
 
   return (
-    <Layout location={location} title={site.title}>
+    <Layout title={site.title}>
       <SEO
         title="Imprint"
         description="The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality."

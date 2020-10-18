@@ -3,6 +3,7 @@ title: About the basics of deep neural networks
 date: 2020-04-02T18:00:00Z
 description: As early as in the 1940s people started to think about how to mimic the human brain. But only since about 2006 has the right hardware and large amount of collected data enabled us to effectively pursue and research this option.
 image: ./cell.png
+category: tech
 ---
 
 The following is a translated summary I wrote while working on the openHPI course [„Practical introduction to deep learning for computer vision“](https://open.hpi.de/courses/neuralnets2020). The students who setup the course did a great job and I can only recommend checking it out.

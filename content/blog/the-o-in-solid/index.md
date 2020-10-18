@@ -3,6 +3,7 @@ title: The O in SOLID Software Architecture — Open Closed Principle
 date: "2020-05-27T18:00:00Z"
 description: "O stands for Open Closed Principle and promotes extension over modification."
 image: "./lenses.jpg"
+category: tech
 ---
 
 Bertrand Meyer first brings up the “Open Closed Principle” in 1988 by writing the famous words

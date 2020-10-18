@@ -17,7 +17,7 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
   const site = data.site.siteMetadata
 
   return (
-    <Layout location={location} title={site.title}>
+    <Layout title={site.title}>
       <SEO
         title="Privacy"
         description="This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site."

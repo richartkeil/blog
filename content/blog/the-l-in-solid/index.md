@@ -3,6 +3,7 @@ title: The L in SOLID Software Architecture — Liskov Substitution Principle
 date: 2020-06-04T18:00:00Z
 description: L stands for Liskov Substitution Principle and encourages architectures that allow exchanging base classes for their subclasses without breaking things.
 image: ./russian-doll.jpg
+category: tech
 ---
 
 „L“ stands for Liskov Substitution Principle and encourages architectures that allow exchanging base classes for their subclasses without breaking things.

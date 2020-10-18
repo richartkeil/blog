@@ -3,6 +3,7 @@ title: How to write custom Laravel Nova Cards without making them a package
 date: "2018-10-12T18:00:00Z"
 description: "Nova allows to extend most of its parts through custom composer packages. This is great for easy sharing with the community, however this is not so great if you need a truly custom extension."
 image: "./nova.jpg"
+category: tech
 ---
 
 [Laravel Nova](https://nova.laravel.com/) has been released in August 2018 and we implemented it in our backend administration for [Exposify](https://www.exposify.de/). It’s a breeze to set up and looks fantastic in our eyes — however since it’s still in its early versions I think there is [lots to work](https://github.com/laravel/nova-issues/issues) on for the team behind it. This leads straight to…
