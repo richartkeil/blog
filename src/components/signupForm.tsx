@@ -17,8 +17,7 @@ const SignupForm = () => {
     >
       <h2 style={{ margin: 0 }}>Get notified about new posts</h2>
       <small>
-        I'll send you a notification once per week if I've published new
-        content. (<Link to="/privacy">Privacy</Link>)
+        I'll send you a notification when there's new content. (<Link to="/privacy">Privacy</Link>)
       </small>
       <form
         action={process.env.GATSBY_MAILCHIMP_SIGNUP_URL}
