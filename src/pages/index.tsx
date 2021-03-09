@@ -44,7 +44,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout title={siteTitle} root>
       <SEO title="Articles about Software and Humans" />
       <Bio />
-      <SignupForm />
       <Category />
       {/* <UpcomingPost
         title="How to build a team based user management system in Firebase"
