@@ -51,7 +51,7 @@ const Bio = () => {
         to understand things and become better at explaining them.
         <div>
           <a href="https://github.com/richartkeil">Github</a> •{" "}
-          <a href="https://www.instagram.com/richartkeil/">Art on Instagram</a> •{" "}
+          {/* <a href="https://www.instagram.com/richartkeil/">Art on Instagram</a> •{" "} */}
           <a href="https://twitter.com/richartkeil">Twitter</a>
         </div>
       </div>
