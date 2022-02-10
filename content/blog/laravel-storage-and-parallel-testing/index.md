@@ -5,6 +5,7 @@ date_updated: "2020-05-31T16:00:00Z"
 description: "Laravel provides neat testing helpers for working with the filesystem — however if you run your tests in parallel, issues are inevitable."
 image: "./storage.jpg"
 category: tech
+canonical: https://medium.com/@richartkeil/laravel-storage-and-parallel-testing-5b8eac44a296
 ---
 
 Laravel provides neat testing helpers for working with the filesystem — however if you run your tests in parallel, issues are inevitable.

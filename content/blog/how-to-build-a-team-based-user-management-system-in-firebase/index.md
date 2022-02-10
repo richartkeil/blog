@@ -5,6 +5,7 @@ description: A guide that explains general ideas and patterns behind a multi-ten
 image: ./beach.jpg
 writeTime: 5.97h
 category: tech
+canonical: https://medium.com/firebase-developers/how-to-build-a-team-based-user-management-system-with-firebase-6a9a6e5c740d
 ---
 
 The Firebase ecosystem offers quite a lot of advice on how to structure your data within Firestore — don't normalize, use subcollections and so on. However, most of these tutorials only cover cases for scenarios where there are many independent users that create or change data. There is little advice on how to build a team-based system, where users are grouped into accounts or tenants.

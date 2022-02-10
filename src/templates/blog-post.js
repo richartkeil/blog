@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import SignupForm from "../components/signupForm"
 import Post from "../components/post"
+import Helmet from "react-helmet"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -20,6 +21,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
         image={post.frontmatter.image?.childImageSharp.fluid.src}
       />
+      {post.frontmatter.canonical && (
+        <Helmet
+          link={[{ rel: "canonical", href: post.frontmatter.canonical }]}
+        />
+      )}
       <article>
         <header>
           <h1
@@ -110,6 +116,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         date_updated(formatString: "MMMM DD, YYYY")
         description
+        canonical
         image {
           childImageSharp {
             fluid(maxWidth: 1000) {
