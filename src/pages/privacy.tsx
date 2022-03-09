@@ -43,18 +43,6 @@ const Imprint = ({ data, location }: PageProps<Data>) => {
         identify you. Personally identifiable information may include, but is
         not limited to your name and email address ("Personal Information").
       </p>
-      <h2>Cookies</h2>
-      <p>
-        Cookies are files with small amount of data, which may include an
-        anonymous unique identifier. Cookies are sent to your browser from a web
-        site and stored on your computer's hard drive.
-      </p>
-      <p>
-        Like many sites, we use "cookies" to collect information. You can
-        instruct your browser to refuse all cookies or to indicate when a cookie
-        is being sent. However, if you do not accept cookies, you may not be
-        able to use some portions of our Site.
-      </p>
       <h2>Security</h2>
       <p>
         The security of your Personal Information is important to us, but
