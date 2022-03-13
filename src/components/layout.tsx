@@ -60,9 +60,6 @@ const Layout: React.FC<{ title: string; root?: boolean }> = ({
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <Helmet>
-        <script src={process.env.GATSBY_OSANO_URL}></script>
-      </Helmet>
       <header>{header}</header>
       <main>{children}</main>
       <footer

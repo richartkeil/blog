@@ -56,12 +56,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-plausible`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
-        anonymize: true,
-        // Do not put in head so Osano is first.
-        head: false,
+        domain: `richartkeil.com`,
       },
     },
     `gatsby-plugin-feed`,
