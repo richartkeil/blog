@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-plausible`,
       options: {
-        domain: `richartkeil.com`,
+        domain: `blog.richartkeil.com`,
       },
     },
     `gatsby-plugin-feed`,
