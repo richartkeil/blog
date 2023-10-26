@@ -50,9 +50,10 @@ const Bio = () => {
         Trying to craft articles like little tasty pieces of knowledge — written
         to understand things and become better at explaining them.
         <div>
+          <a href="https://richartkeil.com">Website</a> •{" "}
           <a href="https://github.com/richartkeil">Github</a> •{" "}
           {/* <a href="https://www.instagram.com/richartkeil/">Art on Instagram</a> •{" "} */}
-          <a href="https://twitter.com/richartkeil">Twitter</a>
+          <a href="https://twitter.com/richartkeil">𝕏</a>
         </div>
       </div>
     </BioContainer>
